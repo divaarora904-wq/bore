@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>VibeVerse | Entertainment Booking</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        .event-card {
+            transition: 0.3s ease;
+        }
+
+        .event-card:hover {
+            transform: translateY(-10px);
+        }
+    </style>
+</head>
+
+<body class="bg-black text-white">
+
+    <!-- NAVBAR -->
+    <nav class="sticky top-0 z-50 flex justify-between items-center px-5 md:px-8 py-5 bg-zinc-950 border-b border-zinc-800">
+
+        <h1 class="text-2xl md:text-3xl font-bold">
+            VIBE<span class="text-purple-500">VERSE</span>
+        </h1>
+
+        <div class="hidden md:flex gap-8 text-gray-300">
+            <a href="#home" class="hover:text-purple-400">Home</a>
+            <a href="#events" class="hover:text-purple-400">Events</a>
+            <a href="#booking" class="hover:text-purple-400">Booking</a>
+            <a href="#about" class="hover:text-purple-400">About</a>
+        </div>
+
+        <a href="#login"
+           class="bg-purple-600 px-5 py-2 rounded-full hover:bg-purple-700 transition">
+            Login
+        </a>
+
+    </nav>
+
+
+    <!-- HOME SECTION -->
+    <section id="home"
+        class="min-h-screen flex items-center justify-center text-center px-6
+        bg-gradient-to-br from-black via-purple-950 to-black">
+
+        <div>
+
+            <p class="text-purple-400 tracking-widest">
+                ENTERTAINMENT • MUSIC • EXPERIENCES
+            </p>
+
+            <h1 class="text-5xl md:text-8xl font-bold mt-5">
+                FEEL THE
+                <span class="text-purple-500">VIBE.</span>
+            </h1>
+
+            <p class="text-gray-400 max-w-xl mx-auto mt-6 text-lg">
+                Discover concerts, music festivals and unforgettable
+                entertainment experiences.
+            </p>
+
+            <a href="#events"
+                class="inline-block mt-8 bg-purple-600 px-8 py-4 rounded-full
+                font-bold hover:scale-105 transition">
+
+                Explore Events 🎵
+
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+    <section class="py-20 px-8">
+
+        <h2 class="text-4xl font-bold text-center mb-12">
+            Why Choose VibeVerse? 🔥
+        </h2>
+
+        <div class="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+
+            <div class="bg-zinc-900 p-8 rounded-2xl hover:scale-105 transition">
+
+                <h3 class="text-2xl font-bold">
+                    🎟️ Easy Booking
+                </h3>
+
+                <p class="text-gray-400 mt-4">
+                    Book your favourite events in just a few clicks.
+                </p>
+
+            </div>
+
+
+            <div class="bg-zinc-900 p-8 rounded-2xl hover:scale-105 transition">
+
+                <h3 class="text-2xl font-bold">
+                    🔥 Best Events
+                </h3>
+
+                <p class="text-gray-400 mt-4">
+                    Discover concerts, festivals and exciting shows.
+                </p>
+
+            </div>
+
+
+            <div class="bg-zinc-900 p-8 rounded-2xl hover:scale-105 transition">
+
+                <h3 class="text-2xl font-bold">
+                    💸 Amazing Offers
+                </h3>
+
+                <p class="text-gray-400 mt-4">
+                    Get exciting deals and discounts on selected events.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- EVENTS SECTION -->
+    <section id="events" class="py-20 px-6 bg-zinc-950">
+
+        <div class="max-w-6xl mx-auto">
+
+            <div class="text-center mb-12">
+
+                <p class="text-purple-500 font-semibold">
+                    FIND YOUR NEXT EXPERIENCE
+                </p>
+
+                <h2 class="text-4xl md:text-5xl font-bold mt-3">
+                    Upcoming Events 🔥
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <!-- EVENT 1 -->
+                <div class="event-card bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=800&q=80"
+                    class="w-full h-52 object-cover"
+                    alt="Concert">
+
+                    <div class="p-6">
+
+                        <p class="text-purple-400">
+                            OCT 12 • DELHI
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-3">
+                            Neon Nights
+                        </h3>
+
+                        <p class="text-gray-400 mt-3">
+                            An incredible night filled with music and lights.
+                        </p>
+
+                        <button onclick="selectEvent('Neon Nights')"
+                        class="w-full bg-purple-600 hover:bg-purple-700 mt-6 py-3 rounded-xl font-bold transition">
+
+                            Book Tickets 🎟️
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EVENT 2 -->
+                <div class="event-card bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=800&q=80"
+                    class="w-full h-52 object-cover"
+                    alt="Festival">
+
+                    <div class="p-6">
+
+                        <p class="text-purple-400">
+                            NOV 05 • MUMBAI
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-3">
+                            Electric Pulse
+                        </h3>
+
+                        <p class="text-gray-400 mt-3">
+                            The biggest electronic music festival of the year.
+                        </p>
+
+                        <button onclick="selectEvent('Electric Pulse')"
+                        class="w-full bg-purple-600 hover:bg-purple-700 mt-6 py-3 rounded-xl font-bold transition">
+
+                            Book Tickets 🎟️
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- EVENT 3 -->
+                <div class="event-card bg-zinc-900 rounded-2xl overflow-hidden border border-zinc-800">
+
+                    <img
+                    src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=800&q=80"
+                    class="w-full h-52 object-cover"
+                    alt="Music Concert">
+
+                    <div class="p-6">
+
+                        <p class="text-purple-400">
+                            DEC 21 • GOA
+                        </p>
+
+                        <h3 class="text-2xl font-bold mt-3">
+                            Sunset Sessions
+                        </h3>
+
+                        <p class="text-gray-400 mt-3">
+                            Music, beaches and unforgettable experiences.
+                        </p>
+
+                        <button onclick="selectEvent('Sunset Sessions')"
+                        class="w-full bg-purple-600 hover:bg-purple-700 mt-6 py-3 rounded-xl font-bold transition">
+
+                            Book Tickets 🎟️
+
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- BOOKING SECTION -->
+    <section id="booking" class="py-20 px-6 bg-black">
+
+        <div class="max-w-md mx-auto bg-zinc-900 p-8 md:p-10 rounded-3xl border border-zinc-800">
+
+            <h2 class="text-4xl font-bold text-center">
+                Book Tickets 🎟️
+            </h2>
+
+            <p class="text-gray-400 text-center mt-3">
+                Reserve your spot for an unforgettable experience.
+            </p>
+
+
+            <form id="bookingForm" class="mt-8 space-y-5">
+
+                <input
+                type="text"
+                placeholder="Your Name"
+                required
+                class="w-full p-4 rounded-xl bg-black border border-gray-700 outline-none focus:border-purple-500">
+
+
+                <input
+                type="email"
+                placeholder="Email Address"
+                required
+                class="w-full p-4 rounded-xl bg-black border border-gray-700 outline-none focus:border-purple-500">
+
+
+                <select id="eventSelect"
+                required
+                class="w-full p-4 rounded-xl bg-black border border-gray-700 outline-none focus:border-purple-500">
+
+                    <option value="">Select Event</option>
+                    <option>Neon Nights</option>
+                    <option>Electric Pulse</option>
+                    <option>Sunset Sessions</option>
+
+                </select>
+
+
+                <input
+                type="number"
+                placeholder="Number of Tickets"
+                min="1"
+                required
+                class="w-full p-4 rounded-xl bg-black border border-gray-700 outline-none focus:border-purple-500">
+
+
+                <button
+                type="submit"
+                class="w-full bg-purple-600 hover:bg-purple-700 py-4 rounded-xl font-bold transition">
+
+                    Confirm Booking 🎉
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- LOGIN SECTION -->
+    <section id="login"
+    class="py-20 px-6 bg-gradient-to-br from-black via-purple-950 to-black">
+
+        <div class="max-w-md mx-auto bg-zinc-900 p-8 md:p-10 rounded-3xl border border-purple-900">
+
+            <h2 class="text-4xl font-bold text-center">
+                Welcome Back 👋
+            </h2>
+
+            <p class="text-gray-400 text-center mt-3">
+                Login to continue exploring events.
+            </p>
+
+
+            <form id="loginForm" class="mt-8 space-y-5">
+
+                <input
+                type="email"
+                placeholder="Email Address"
+                required
+                class="w-full p-4 rounded-xl bg-black border border-gray-700 outline-none focus:border-purple-500">
+
+
+                <input
+                type="password"
+                placeholder="Password"
+                required
+                class="w-full p-4 rounded-xl bg-black border border-gray-700 outline-none focus:border-purple-500">
+
+
+                <button
+                type="submit"
+                class="w-full bg-purple-600 hover:bg-purple-700 py-4 rounded-xl font-bold transition">
+
+                    Login 🚀
+
+                </button>
+
+
+                <p class="text-center text-gray-400">
+                    Don't have an account?
+                    <a href="#" class="text-purple-400 hover:underline">
+                        Sign Up
+                    </a>
+                </p>
+
+            </form>
+
+        </div>
+
+    </section>
+
+
+    <!-- ABOUT / FOOTER -->
+    <footer id="about" class="bg-zinc-950 text-center py-10 text-gray-500 border-t border-zinc-800">
+
+        <h2 class="text-white text-2xl font-bold">
+            VIBE<span class="text-purple-500">VERSE</span>
+        </h2>
+
+        <p class="mt-3">
+            Your gateway to unforgettable experiences. 🎵
+        </p>
+
+        <p class="mt-5 text-sm">
+            © 2026 VibeVerse. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // Select event and automatically go to booking section
+        function selectEvent(eventName) {
+
+            document.getElementById("eventSelect").value = eventName;
+
+            document.getElementById("booking").scrollIntoView({
+                behavior: "smooth"
+            });
+
+        }
+
+
+        // Booking Form
+        document.getElementById("bookingForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const selectedEvent = document.getElementById("eventSelect").value;
+
+            alert("🎉 Your booking for " + selectedEvent + " has been successful!");
+
+            this.reset();
+
+        });
+
+
+        // Login Form
+        document.getElementById("loginForm").addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            alert("🚀 Login successful! Welcome to VibeVerse.");
+
+            this.reset();
+
+        });
+
+    </script>
+
+</body>
+</html>

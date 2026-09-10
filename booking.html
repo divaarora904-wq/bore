@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Book Tickets | VibeVerse</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+
+<body class="bg-black text-white min-h-screen">
+
+
+<nav class="px-8 py-5 bg-zinc-950">
+
+<a href="index.html"
+class="text-3xl font-bold">
+
+VIBE<span class="text-purple-500">VERSE</span>
+
+</a>
+
+</nav>
+
+
+<section class="flex justify-center items-center py-16 px-6">
+
+<div class="bg-zinc-900 p-8 rounded-3xl w-full max-w-lg">
+
+<h1 class="text-4xl font-bold text-center">
+Book Your Tickets 🎟️
+</h1>
+
+
+<form class="mt-8 space-y-5">
+
+
+<input
+type="text"
+placeholder="Your Name"
+class="w-full p-4 rounded-xl bg-black border border-gray-700">
+
+
+<input
+type="email"
+placeholder="Email Address"
+class="w-full p-4 rounded-xl bg-black border border-gray-700">
+
+
+<select
+class="w-full p-4 rounded-xl bg-black border border-gray-700">
+
+<option>Select Event</option>
+
+<option>Neon Nights</option>
+
+<option>Electric Pulse</option>
+
+<option>Sunset Sessions</option>
+
+</select>
+
+
+<input
+type="number"
+placeholder="Number of Tickets"
+class="w-full p-4 rounded-xl bg-black border border-gray-700">
+
+
+<button
+type="submit"
+class="w-full bg-purple-600 py-4 rounded-xl font-bold hover:bg-purple-700">
+
+Confirm Booking 🎉
+
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+
+<script>
+
+document.querySelector("form").addEventListener("submit", function(event){
+
+event.preventDefault();
+
+alert("🎉 Booking Successful! Your confirmation will arrive soon.");
+
+});
+
+</script>
+
+
+</body>
+</html>

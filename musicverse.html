@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>VibeVerse | Feel The Music</title>
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background: #070707;
+      color: white;
+      font-family: Arial, sans-serif;
+      overflow-x: hidden;
+    }
+
+    .glow {
+      box-shadow: 0 0 25px rgba(168, 85, 247, 0.5);
+    }
+
+    .event-card {
+      transition: 0.4s;
+    }
+
+    .event-card:hover {
+      transform: translateY(-12px) scale(1.02);
+    }
+
+    .artist-card {
+      transition: 0.4s;
+    }
+
+    .artist-card:hover {
+      transform: scale(1.08);
+    }
+
+    .hero-bg {
+      background:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.9)),
+        url('https://images.unsplash.com/photo-1501386761578-eac5c94b800a?auto=format&fit=crop&w=1600&q=80');
+      background-size: cover;
+      background-position: center;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+
+  <nav class="fixed top-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-gray-800">
+    <div class="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
+
+      <h1 class="text-3xl font-bold">
+        VIBE<span class="text-purple-500">VERSE</span>
+      </h1>
+
+      <div class="hidden md:flex gap-8 text-gray-300">
+        <a href="#home" class="hover:text-purple-400">Home</a>
+        <a href="#events" class="hover:text-purple-400">Events</a>
+        <a href="#artists" class="hover:text-purple-400">Artists</a>
+        <a href="#about" class="hover:text-purple-400">About</a>
+      </div>
+
+      <button class="bg-purple-600 hover:bg-purple-700 px-5 py-2 rounded-full transition">
+        Explore Now
+      </button>
+
+    </div>
+  </nav>
+
+
+  <!-- HERO SECTION -->
+
+  <section id="home" class="hero-bg min-h-screen flex items-center justify-center text-center px-6">
+
+    <div class="max-w-4xl mt-20">
+
+      <p class="text-purple-400 tracking-[5px] mb-5">
+        THE FUTURE OF LIVE MUSIC
+      </p>
+
+      <h1 class="text-5xl md:text-8xl font-bold leading-tight">
+        FEEL THE
+        <span class="text-purple-500">VIBE.</span>
+      </h1>
+
+      <p class="text-gray-300 text-lg md:text-xl mt-6 max-w-2xl mx-auto">
+        Discover unforgettable concerts, incredible artists and the biggest
+        music experiences happening around you.
+      </p>
+
+      <div class="mt-10 flex justify-center gap-5 flex-wrap">
+
+        <a href="#events"
+           class="bg-purple-600 hover:bg-purple-700 px-8 py-4 rounded-full font-bold glow transition">
+          Explore Events 🎵
+        </a>
+
+        <a href="#artists"
+           class="border border-white/40 hover:bg-white hover:text-black px-8 py-4 rounded-full font-bold transition">
+          Meet Artists
+        </a>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- STATS -->
+
+  <section class="bg-purple-600 py-10">
+
+    <div class="max-w-6xl mx-auto grid grid-cols-2 md:grid-cols-4 text-center gap-8">
+
+      <div>
+        <h2 class="text-4xl font-bold">500+</h2>
+        <p>Live Events</p>
+      </div>
+
+      <div>
+        <h2 class="text-4xl font-bold">100K+</h2>
+        <p>Music Lovers</p>
+      </div>
+
+      <div>
+        <h2 class="text-4xl font-bold">300+</h2>
+        <p>Artists</p>
+      </div>
+
+      <div>
+        <h2 class="text-4xl font-bold">50+</h2>
+        <p>Cities</p>
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- EVENTS -->
+
+  <section id="events" class="py-24 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-14">
+
+        <p class="text-purple-500 font-bold">
+          DON'T MISS OUT
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-bold mt-3">
+          Upcoming Events 🔥
+        </h2>
+
+      </div>
+
+
+      <div class="grid md:grid-cols-3 gap-8">
+
+
+        <!-- CARD 1 -->
+
+        <div class="event-card bg-zinc-900 rounded-3xl overflow-hidden border border-gray-800">
+
+          <img
+            src="https://images.unsplash.com/photo-1492684223066-81342ee5ff30?auto=format&fit=crop&w=900&q=80"
+            class="w-full h-60 object-cover"
+            alt="Concert">
+
+          <div class="p-6">
+
+            <p class="text-purple-400">
+              OCT 12 • NEW DELHI
+            </p>
+
+            <h3 class="text-2xl font-bold mt-3">
+              Neon Nights
+            </h3>
+
+            <p class="text-gray-400 mt-3">
+              Experience an unforgettable night filled with music, lights and energy.
+            </p>
+
+            <button class="mt-6 w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-xl font-bold">
+              Book Tickets 🎟️
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- CARD 2 -->
+
+        <div class="event-card bg-zinc-900 rounded-3xl overflow-hidden border border-gray-800">
+
+          <img
+            src="https://images.unsplash.com/photo-1506157786151-b8491531f063?auto=format&fit=crop&w=900&q=80"
+            class="w-full h-60 object-cover"
+            alt="Festival">
+
+          <div class="p-6">
+
+            <p class="text-purple-400">
+              NOV 05 • MUMBAI
+            </p>
+
+            <h3 class="text-2xl font-bold mt-3">
+              Electric Pulse
+            </h3>
+
+            <p class="text-gray-400 mt-3">
+              The biggest electronic music festival of the year is finally here.
+            </p>
+
+            <button class="mt-6 w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-xl font-bold">
+              Book Tickets 🎟️
+            </button>
+
+          </div>
+
+        </div>
+
+
+        <!-- CARD 3 -->
+
+        <div class="event-card bg-zinc-900 rounded-3xl overflow-hidden border border-gray-800">
+
+          <img
+            src="https://images.unsplash.com/photo-1516280440614-37939bbacd81?auto=format&fit=crop&w=900&q=80"
+            class="w-full h-60 object-cover"
+            alt="Music">
+
+          <div class="p-6">
+
+            <p class="text-purple-400">
+              DEC 21 • GOA
+            </p>
+
+            <h3 class="text-2xl font-bold mt-3">
+              Sunset Sessions
+            </h3>
+
+            <p class="text-gray-400 mt-3">
+              Music, beaches and unforgettable vibes under the beautiful sunset.
+            </p>
+
+            <button class="mt-6 w-full bg-purple-600 hover:bg-purple-700 py-3 rounded-xl font-bold">
+              Book Tickets 🎟️
+            </button>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- ARTISTS -->
+
+  <section id="artists" class="bg-zinc-950 py-24 px-6">
+
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-14">
+
+        <p class="text-purple-500 font-bold">
+          MUSIC ICONS
+        </p>
+
+        <h2 class="text-4xl md:text-5xl font-bold mt-3">
+          Trending Artists 🎤
+        </h2>
+
+      </div>
+
+
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+
+
+        <div class="artist-card text-center">
+
+          <img
+            src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?auto=format&fit=crop&w=500&q=80"
+            class="w-40 h-40 mx-auto rounded-full object-cover border-4 border-purple-600">
+
+          <h3 class="text-xl font-bold mt-5">
+            Aria Nova
+          </h3>
+
+          <p class="text-gray-400">
+            Pop Artist
+          </p>
+
+        </div>
+
+
+        <div class="artist-card text-center">
+
+          <img
+            src="https://images.unsplash.com/photo-1508214751196-bcfd4ca60f91?auto=format&fit=crop&w=500&q=80"
+            class="w-40 h-40 mx-auto rounded-full object-cover border-4 border-purple-600">
+
+          <h3 class="text-xl font-bold mt-5">
+            Kairo
+          </h3>
+
+          <p class="text-gray-400">
+            Indie Artist
+          </p>
+
+        </div>
+
+
+        <div class="artist-card text-center">
+
+          <img
+            src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=500&q=80"
+            class="w-40 h-40 mx-auto rounded-full object-cover border-4 border-purple-600">
+
+          <h3 class="text-xl font-bold mt-5">
+            Zayn River
+          </h3>
+
+          <p class="text-gray-400">
+            Rock Artist
+          </p>
+
+        </div>
+
+
+        <div class="artist-card text-center">
+
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"
+            class="w-40 h-40 mx-auto rounded-full object-cover border-4 border-purple-600">
+
+          <h3 class="text-xl font-bold mt-5">
+            Luna Ray
+          </h3>
+
+          <p class="text-gray-400">
+            Electronic Artist
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <!-- CTA -->
+
+  <section class="py-24 px-6 text-center">
+
+    <div class="max-w-3xl mx-auto bg-gradient-to-r from-purple-700 to-pink-600 p-12 rounded-3xl">
+
+      <h2 class="text-4xl md:text-5xl font-bold">
+        Ready To Feel The Vibe? 🔥
+      </h2>
+
+      <p class="mt-5 text-lg text-white/80">
+        Join thousands of music lovers and never miss an unforgettable experience.
+      </p>
+
+      <button class="mt-8 bg-white text-black px-8 py-4 rounded-full font-bold hover:scale-105 transition">
+        Join VibeVerse 🚀
+      </button>
+
+    </div>
+
+  </section>
+
+
+  <!-- FOOTER -->
+
+  <footer id="about" class="border-t border-gray-800 py-10 text-center text-gray-500">
+
+    <h2 class="text-2xl font-bold text-white mb-3">
+      VIBE<span class="text-purple-500">VERSE</span>
+    </h2>
+
+    <p>
+      Where music meets unforgettable experiences. 🎵
+    </p>
+
+    <p class="mt-5 text-sm">
+      © 2026 VibeVerse. All Rights Reserved.
+    </p>
+
+  </footer>
+
+
+  <!-- JAVASCRIPT -->
+
+  <script>
+
+    const buttons = document.querySelectorAll("button");
+
+    buttons.forEach(button => {
+
+      button.addEventListener("click", function() {
+
+        if (this.innerText.includes("Book Tickets")) {
+          alert("🎉 Your ticket booking page will open soon!");
+        }
+
+      });
+
+    });
+
+  </script>
+
+</body>
+</html>
